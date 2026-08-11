@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Form</title>
+  </head>
+  <body>
+    <head>
+      <h1>GitHub Repository Survey</h1>
+      <p>
+        Thank you for your time in viewing and going through my repositories. <br>
+        Please spare a few minutes filling in this survey. It will be very <br>
+        beneficial for my growth and future success.
+      </p>
+    </head>
+
+    <main>
+      <section>
+        <form>
+          <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="name">
+              Name (required):
+            </label>
+            <input type="text" id="name" name="name" placeholder="e.g., John Doe" required>
+
+            <label for="age">
+              Age (optional):
+            </label>
+            <input type="number" id="age" name="age" min="12" max="100" placeholder="12">
+
+            <label for="web-developer">
+              Are you a web developer?
+            </label>
+            <input type="radio" id="web-developer" name="developer" value="yes" checked>
+            <label for="web-developer">Yes</label>
+            <input type="radio" id="web-developer" name="developer" value="no">
+            <label for="web-developer">No</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>GitHub Repository</legend>
+
+            <label for="repo">
+              Have you gone through all of my repositories?
+            </label>
+            <input type="radio" id="repo" name="visted" value="yes" checked>
+            <label for="web-developer">Yes</label>
+            <input type="radio" id="repo" name="visited" value="no">
+            <label for="web-developer">No</label>
+
+            <label for="ratings">
+              What is your overall rating for them?
+            </label>
+            <select id="ratings" name="ratings">
+              <option value="poor">Poor</option>
+              <option value="satisfactory">Satisfactory</option>
+              <option value="good">Good</option>
+              <option value="very-good">Very Good</option>
+              <option value="excellent" selected>Excellent</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Feedback</legend>
+            <label>Do you have any feedback you would like to give me?</label>
+            <textarea rows="10" cols="40"></textarea>
+          </fieldset>
+
+          <button type="submit">Submit Form</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>No copyright - created by Njabulo</p>
+    </footer>
+  </body>
+</html>
