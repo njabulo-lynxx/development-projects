@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Keyword</title>
+</head>
+<body>
+    <script>
+        /*The let keyword is a swap-in for var
+         *The advantage is that you cannot redeclare
+         *a variable in the same scope once you have done so with let
+         */
+
+         /*
+         //Example using var (Not recommended)
+         var hello = "Hello mate"
+         var counter = 1
+
+         //Will redefine the hello variable
+         if (counter > 0) {
+            var hello = "How are you"
+         }
+
+         console.log(hello)
+         */
+
+         
+         //Example using let
+         let hello = "Hello mate"
+         let counter = 1
+
+         //Second declaration is ignored
+         if (counter > 0) {
+            let hello = "How are you"
+         }
+
+         console.log(hello)
+         
+    </script>
+</body>
+</html>

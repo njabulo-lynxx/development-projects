@@ -1,0 +1,91 @@
+    .student-profile, body > p { 
+        display: none !important; 
+    }
+
+    .all-students { 
+        max-width: 500px; 
+        margin: 1px auto; 
+        padding: 0px 0px; 
+        font-size: 60%;
+    }
+
+    .student-card {
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 6px;
+        background: #e6f7ff;
+        box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    }
+    .student-card p { 
+        margin: 6px 0; 
+        padding: 6px; 
+        background:#fff; 
+        border-radius:4px; 
+    }
+
+    .student-card strong { 
+        display:inline-block; 
+        width:150px; 
+        color:#333; 
+    }
+
+    .student-profile {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: lightblue;
+    }
+    .student-profile h2 {
+        color: #333;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .student-profile p {
+        margin: 10px 0;
+        padding: 8px;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+    }
+    .student-profile strong {
+        color: #444;
+        display: inline-block;
+        width: 150px;
+    }
+    .border {
+        font-family: 'Times New Roman';
+        font-style: italic;
+        font-size: 150%;
+        text-align: center;
+        padding: 50px;
+        width: device-width;
+        height: 500px;
+        background: #e6f7ff;
+    }
+    .header {
+        font-family: 'Times New Roman';
+        font-style: italic;
+        font-size: 200%;
+        text-align: center;
+        padding: 20px;
+        max-height: 700px;
+        background: white;
+    }
+    .registration-form {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: bold;
+        font-size: 100%;
+        text-align: center;
+        padding: 10px;
+        background: white;
+    }
+    .table-registered-students {
+        font-family: 'Times New Roman';
+        font-style: italic;
+        font-size: 50%;
+        text-align: left;
+        padding: 10px;
+        background: lightgrey;
+    }

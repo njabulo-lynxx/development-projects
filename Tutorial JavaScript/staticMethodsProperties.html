@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static methods and properties</title>
+</head>
+<body>
+    <script>
+        //Declaring a class
+        class User {
+
+            constructor(forename, username, timezone) {
+                this.forename = forename
+                this.username = username
+                this.timezone = timezone
+            }
+
+            //Static property
+            static greeting = "Hello";
+
+            showUser() {
+                console.log("Forename: " + this.forename)
+                console.log("Username: " + this.username)
+                console.log("Timezone: " + this.timezone)
+            }
+
+            //Static method
+            static greet(name) {
+                console.log(this.greeting + " " + name)
+            }
+        }
+
+        console.log(User.greeting)
+        User.greet("Lynxx")
+
+    </script>
+</body>
+</html>

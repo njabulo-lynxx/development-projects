@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+<h2>Manage Products</h2>
+
+<form method="post">
+    <table class="form-table">
+        <tr>
+            <td><label for="id">Product ID:</label></td>
+            <td><input type="number" name="id" id="id"></td>
+        </tr>
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="price"Price:></label></td>
+            <td><input type="number" step="0.01" name="price" id="price"></td>
+        </td>
+        <td>
+            <td><label for="stock">Stock:</label></td>
+            <td><input type="number" name="stock" id="stock"></td>
+        </td>
+        <td>
+            <td><label for="threshold">Threshold:</label></td>
+            <td><input type="number" name="threshold" id="threshold"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" name="action" value="Add">
+                <input type="submit" name="action" value="Update">
+                <input type="submit" name="action" value="Delete">
+                <input type="submit" name="action" value="View All">
+                <input type="submit" name="action" value="View Below Stock">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Function</title>
+</head>
+<body>
+    <script>
+        //Return function example
+        console.log("Return function example")
+
+        console.log(fixWords("the", "DALLAS", "CowBoys"))
+
+        function fixWords(...words) {
+            let s = ""
+
+            for (i = 0; i < words.length; ++i)
+            s += words[i].charAt(0).toUpperCase() +
+                 words[i].substring(1).toLowerCase() + " "
+            
+        return s.substring(0, s.length-1)
+        }
+        
+        //Return Array Function example
+        console.log("Return array function example")
+
+        words = fixNames("the", "DaLLas", "CoWbOys")
+
+        for (i = 0; i < words.length; i++)
+             console.log(words[i])
+
+        function fixNames(...names) {
+            let s = []
+            
+            for (i = 0; i < names.length; i++)
+            s[i] = names[i].charAt(0).toUpperCase() +
+                   names[i].substr(1).toLowerCase()
+
+            return s
+        }
+        </script>
+</body>
+</html>

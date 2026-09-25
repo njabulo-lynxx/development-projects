@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associative Arrays</title>
+</head>
+<body>
+    <script>
+        /*
+         *An associative array is one in which
+         *the elements are referenced by name
+         *rather than by an integer offset
+         */
+
+         // Javascript does not support such things 
+         // so the following is actually a javascript object
+
+         //Step 1: Define a block of elements within curly braces {}
+         //Step 2: For each element, place the key on the left and
+         //        the contents on the right of the colon (:)
+
+         balls = {golf :   "Golf balls, 6",
+                  tennis : "Tennis balls, 3",
+                  soccer : "Soccer ball, 1",
+                  ping :   "Ping Pong balls, 1 dozen"}
+
+        for (const ball in balls)
+           console.log(ball + " = " + balls[ball])
+
+        //Verify if it a javascript object
+        console.log(typeof balls)
+    </script>
+</body>
+</html>

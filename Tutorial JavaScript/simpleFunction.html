@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        //Function example 1
+        console.log("Function example 1")
+        displayItems("Cat", "Mouse", "Bird", "Dog")
+
+        function displayItems(i1, i2, i3, i4) {
+            console.log(i1)
+            console.log(i2)
+            console.log(i3)
+            console.log(i4)
+        }
+
+        //Function example 2
+        console.log("Function example 2")
+
+        let t = "table"
+
+        displayThings("Spoons", 120, 5.50, t)
+
+        function displayThings(...params) {
+            for (i = 0; i < params.length; ++i)
+            console.log(params[i])
+        }
+
+    </script>
+</body>
+</html>

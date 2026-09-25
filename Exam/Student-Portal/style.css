@@ -1,0 +1,73 @@
+    .header {
+        font-family: 'Times New Roman';
+        font-style: italic;
+        font-size: 200%;
+        text-align: center;
+        padding: 20px;
+        max-height: 700px;
+        background: white;
+    }
+
+    .border {
+        font-family: 'Times New Roman';
+        font-style: italic;
+        font-size: 100%;
+        text-align: center;
+        padding: 50px;
+        width: device-width;
+        height: 500px;
+        background: #e6f7ff;
+    }
+
+    .taken, .error {
+        color: red;
+        font-weight: bold;
+    }
+    
+    .available, .success {
+        color: greenyellow;
+    }
+
+    .all-students { 
+        max-width: 500px; 
+        margin: 1px auto; 
+        padding: 0px 0px; 
+        font-size: 60%;
+    }
+
+    .student-card {
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 6px;
+        background: #e6f7ff;
+        box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    }
+    .student-card p { 
+        margin: 6px 0; 
+        padding: 6px; 
+        background:#fff; 
+        border-radius:4px; 
+    }
+
+    .student-card strong { 
+        display:inline-block; 
+        width:150px; 
+        color:#333; 
+    }
+    .registration-form {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: bold;
+        font-size: 100%;
+        text-align: center;
+        padding: 10px;
+        background: white;
+    }
+    .table-registered-students {
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 50%;
+        text-align: center;
+        padding: 10px;
+        background: lightgrey;
+        color: black;
+    }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <script>
+        //Declaring a class
+        class User {
+
+            constructor(forename, username, timezone) {
+                this.forename = forename
+                this.username = username
+                this.timezone = timezone
+            }
+
+            showUser() {
+                console.log("Forename: " + this.forename)
+                console.log("Username: " + this.username)
+                console.log("Timezone: " + this.timezone)
+            }
+        }
+
+        //Creating an instance (object) of a class
+        const user = new User("Lynxx", "heroiclynx221", "UTC")
+        user.showUser()
+
+    </script>
+</body>
+</html>

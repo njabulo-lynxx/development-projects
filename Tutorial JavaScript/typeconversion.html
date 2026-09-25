@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+<body>
+    <script>
+        //Variable n is a string
+        n = "123"
+        console.log("n = " + n + " is a " + typeof n)
+        
+        //Convert a string data-type to a number data-type
+        n *= 1
+        console.log("n = " + n + " is a " + typeof n)
+
+        //Convert a number data-type to a string data-type
+        n += ""
+        console.log("n = " + n + " is a " + typeof n + " again!")
+
+        //Convert a string data-type to a number data-type
+        n = parseInt(n)
+        console.log("n = " + n + " is a " + typeof n + " once more")
+
+        //Convert a number data-type to a string data-type
+        n = n.toString()
+        console.log("n = " + n + " is a " + typeof n + " yet again")
+    </script>
+</body>
+</html>
