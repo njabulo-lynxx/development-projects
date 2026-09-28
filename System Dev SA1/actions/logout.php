@@ -1,9 +1,10 @@
 <?php
-require_once 'header.php';
+/* require_once 'header.php'; */
+require_once __DIR__ . '/../includes/header.php';
 
 if (isset($_SESSION['admin'])) {
     destroySession();
-    header('Location: index.php');
+    header('Location: /../pages/index.php');
 } else
     echo "<div class='center'>
           You cannot log out because you are not logged in</div>";

@@ -2,8 +2,10 @@
 // This file displays all student profiles
 
 // Include header and database connection
-require 'header.php';
-require_once 'dbconn.php';
+/* require 'header.php'; */
+require __DIR__ . '/../includes/header.php';
+/* require_once 'dbconn.php'; */
+require_once __DIR__ . '/../database/dbconn.php';
 ?>
 
 <!DOCTYPE html>

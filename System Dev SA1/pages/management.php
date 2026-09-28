@@ -2,8 +2,10 @@
 // This is management.php - admin can manage student details here
 
 // Include header and database connection
-require_once 'header.php';
-require_once 'dbconn.php';
+/* require_once 'header.php'; */
+require_once __DIR__ . '/../includes/header.php';
+/* require_once 'dbconn.php'; */
+require_once __DIR__ . '/../database/dbconn.php';
 ?>
 
 <!DOCTYPE html>

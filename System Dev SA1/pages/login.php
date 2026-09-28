@@ -3,7 +3,8 @@
 // It uses a dropdown to select user type and processes login accordingly.
 
 // Assumes a database connection is established in header.php
-require_once 'header.php';
+/* require_once 'header.php'; */
+require_once __DIR__ . '/../includes/header.php';
 
 $error = $username = "";
 
