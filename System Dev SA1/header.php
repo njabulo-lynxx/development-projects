@@ -5,8 +5,7 @@
 
 // Start the session and include database connection
 session_start();
-/* require_once 'dbconn.php'; */
-require_once __DIR__ . '/../database/dbconn.php';
+require_once 'dbconn.php';
 
 // Initialize user string
 $userstr = 'Welcome Guest';
@@ -35,8 +34,8 @@ if(isset($_SESSION['admin'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../assets/js/javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- bootstrap css and js -->

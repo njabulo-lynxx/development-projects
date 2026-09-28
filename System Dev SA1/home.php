@@ -3,8 +3,7 @@
 // It displays a welcome message to the user.
 
 // Include the header file to manage sessions and navigation
-/* require_once 'header.php'; */
-require_once __DIR__ . '/../includes/header.php';
+require_once 'header.php';
 
 // Checks the current user and displays the appropriate welcome message
 ?>

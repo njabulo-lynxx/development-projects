@@ -2,8 +2,7 @@
 // Student Sign Up Page
 
 // Include header
-/* require_once 'header.php'; */
-require_once __DIR__ . '/../includes/header.php';
+require_once 'header.php';
 
 // Initialize variables
 $error = $student = "";

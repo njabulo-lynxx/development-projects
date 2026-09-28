@@ -1,6 +1,5 @@
 <?php
-/* require_once '../includes/header.php'; */
-require_once __DIR__ . '/../includes/header.php';
+require_once 'header.php';
 
 echo "<div class='border'>Welcome to the System Dev SA1 Web App!";
 
