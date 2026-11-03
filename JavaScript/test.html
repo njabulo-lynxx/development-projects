@@ -6,8 +6,33 @@
     <title>Test Javascript</title>
   </head>
   <body>
+
+    <button id="num1" 
+    onclick="
+    showConsole(no1);
+    ">
+      1
+    </button>
+
+    <button id="num2"
+    onclick="
+    showConsole(no2);
+    ">
+      2
+    </button>
+
     <script>
-      alert("Hello, world!");
+      let num1 = document.getElementById("num1");
+      let num2 = document.getElementById("num2");
+
+      let no1 = Number(num1.textContent);
+      let no2 = Number(num2.textContent);
+
+      function showConsole(btn) {
+        return console.log(btn);
+      }
+
+      console.log(typeof no1);
     </script>
   </body>
 </html>
