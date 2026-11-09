@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Local external CSS-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Local external JavaScript-->
+        <script defer src="script.js"></script>
+
+        <title>Tony's price</title>
+    </head>
+    <body>
+        <header>
+            <h1>Tony's Price</h1>
+        </header>
+
+        <main>
+            <section>
+                <!--Merchant section-->
+                <!--Introduce Tony and his shop-->
+                <p>
+                    Tony, a merchant who sells artifacts (magical equipments) is seen in the friendly village of Dali. With him, his cat Snowflake which naps the entire time and the various artifacts he made on full display.
+                </p>
+            </section>
+
+            <section>
+                <!--Character section-->
+                <p>
+                    Approaching the merchant cart are two teenagers. A boy named Lynxx and a girl name Terrah. Interested in what the mercahnt has to offer, they approach the cart.
+                </p>
+            </section>
+
+            <section id="dialogue">
+                <p id="character-name">Tony</p>
+                <p id="dialogue-text">
+                    Hi there! The name's Tony and I sell all kinds of abominations which you call artifacts, some may call them magical weapons.
+                </p>
+            </section>
+
+            <section>
+                <!--Game section-->
+                <form>
+                    <label for="guess">Guess: </label>
+                    <input type="number" id="guess" name="guess" min="1" max="100">
+                    <button type="submit">
+                        Guess
+                    </button>
+                </form>
+
+                <p id="feedback-message">
+                </p>
+
+                <p>
+                    Attempts remaining : <span id="attempts">7</span>
+                </p>
+                
+            </section>
+
+        </main>
+
+    </body>
+</html>
