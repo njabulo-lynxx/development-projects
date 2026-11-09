@@ -4,3 +4,37 @@
     --bright-dark-gold: rgb(253, 202, 32);
     --wood-brown: rgb(193, 154, 107);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: sans-serif;
+}
+
+header {
+    background-color: var(--bright-dark-gold);
+    color: var(--black);
+}
+
+main {
+    background-color: var(--white);
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5;
+}
