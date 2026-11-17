@@ -1,3 +1,5 @@
+/*General*/
+
 :root {
     --white: rgb(250, 250, 250);
     --black: rgb(0, 0, 0);
@@ -15,24 +17,35 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: var(--white);
-    color: var(--black);
-    font-family: sans-serif;
+.container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+    margin-bottom: 1rem;
 }
+
+/*Header*/
 
 header {
     background-color: var(--bright-dark-gold);
     color: var(--black);
 }
 
+h1 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*Main*/
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: sans-serif;
+}
+
 main {
     background-color: var(--white);
     padding: 1rem;
-}
-
-section {
-    margin-bottom: 1rem;
 }
 
 p {
@@ -41,7 +54,45 @@ p {
 
 form {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
     padding: 10px;
+}
+
+input {
+    width: 90px;
+    padding: 8px;
+    border: 1px solid var(--bright-dark-gold);
+    font-size: 20px;
+}
+
+input:focus-visible {
+    outline: 2px solid var(--black);
+}
+
+button {
+    width: 90px;
+    padding: 8px;
+    font-size: 20px;
+    color: var(--white);
+    background: var(--black);
+    border: 1px solid var(--bright-dark-gold);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:focus-visible,
+button:hover {
+    color: var(--black);
+    background: var(--white);
+}
+
+/*Guess History Section*/
+
+table {
+    background: var(--wood-brown);
+    width: 100%;
+    padding: 5px;
 }

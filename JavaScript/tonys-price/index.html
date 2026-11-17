@@ -18,7 +18,7 @@
         </header>
 
         <main>
-            <section>
+            <section class="container">
                 <!--Merchant section-->
                 <!--Introduce Tony and his shop-->
                 <p>
@@ -26,24 +26,26 @@
                 </p>
             </section>
 
-            <section>
+            <section class="container">
                 <!--Character section-->
                 <p>
                     Approaching the merchant cart are two teenagers. A boy named Lynxx and a girl name Terrah. Interested in what the mercahnt has to offer, they approach the cart.
                 </p>
             </section>
 
-            <section id="dialogue">
+            <section id="dialogue" class="container">
                 <p id="character-name">Tony</p>
                 <p id="dialogue-text">
                     Hi there! The name's Tony and I sell all kinds of abominations which you call artifacts, some may call them magical weapons.
                 </p>
             </section>
 
-            <section>
+            <section class="container">
                 <!--Game section-->
                 <form>
-                    <label for="guess">Guess: </label>
+                    <label for="guess">
+                        <span id="current-player">Lynxx's guess</span> 
+                    </label>
                     <input type="number" id="guess" name="guess" min="1" max="100">
                     <button type="submit">
                         Guess
@@ -57,6 +59,37 @@
                     Attempts remaining : <span id="attempts">7</span>
                 </p>
                 
+            </section>
+
+            <!--Guessing History-->
+            <section class="container">
+                <table>
+                    <caption>Guess history</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Player</th>
+                            <th scope="col">Guess</th>
+                            <th scope="col">Result</th>
+                        </tr>
+                    </thead>
+                    <tbody id="guess-history">
+                        <tr>
+                            <td>Lynxx</td>
+                            <td>25</td>
+                            <td>Too low</td>
+                        </tr>
+                        <tr>
+                            <td>Lynxx</td>
+                            <td>65</td>
+                            <td>Too high</td>
+                        </tr>
+                        <tr>
+                            <td>Terrah</td>
+                            <td>45</td>
+                            <td>Correct!</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
         </main>
