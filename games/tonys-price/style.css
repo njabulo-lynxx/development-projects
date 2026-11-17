@@ -45,7 +45,6 @@ body {
 
 main {
     background-color: var(--white);
-    padding: 1rem;
 }
 
 p {
@@ -94,5 +93,30 @@ button:hover {
 table {
     background: var(--wood-brown);
     width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    background-color: var(--bright-dark-gold);
+    color: var(--black);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    border-top: 1px solid var(--black);
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+}
+
+th,
+td {
+    border: 1px solid var(--bright-dark-gold);
     padding: 5px;
+    text-align: center;
+}
+
+th {
+    background: var(--black);
+    color: var(--white);
+    padding: 15px 0;
+    font-weight: 700;
 }
