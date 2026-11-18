@@ -1,0 +1,47 @@
+header {
+    outline: 1px solid red;
+    height: 85px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+  position: relative;
+  z-index: 20;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    flex-direction: column;
+    gap: 0;
+    padding: 15px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links.show {
+    display: flex;
+}
+
+.menu-toggle {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--navy);
+    background: inherit;
+    border: none;
+  }
