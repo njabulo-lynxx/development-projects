@@ -1,6 +1,5 @@
 header {
-    outline: 1px solid red;
-    height: 85px;
+    height: 100px;
 }
 
 nav {
@@ -10,9 +9,9 @@ nav {
 }
 
 .logo {
-  width: 150px;
-  position: relative;
-  z-index: 20;
+    width: clamp(150px, 20vw, 200px);
+    position: relative;
+    z-index: 20;
 }
 
 .logo img {
@@ -22,15 +21,31 @@ nav {
 
 .nav-links {
     display: none;
+    list-style: none;
+    flex-direction: column;
     position: absolute;
     top: 85px;
     left: 0;
     width: 100%;
-    background: var(--white);
-    flex-direction: column;
-    gap: 0;
     padding: 15px 0;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    position: relative;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
 }
 
 .nav-links.show {
@@ -44,4 +59,17 @@ nav {
     color: var(--navy);
     background: inherit;
     border: none;
-  }
+}
+
+.visit-btn {
+  margin-left: 0;
+  padding: 10px;
+  background: var(--gold);
+  color: var(--white) !important;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+.visit-btn:hover {
+  background: var(--dark-gold);
+}
