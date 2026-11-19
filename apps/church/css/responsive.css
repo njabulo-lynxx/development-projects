@@ -15,7 +15,7 @@
 
     .hero-description {
         font-size: 16px;
-        margin: 0 auto 25px;
+        margin-bottom: 25px;
     }
 
     .hero-buttons {
@@ -24,7 +24,7 @@
     }
 }
 
-@media (min-width: 790px) {
+@media (min-width: 800px) {
     .hero {
         min-height: 405px;
     }
@@ -34,16 +34,19 @@
     }
 
     h1 {
-        font-size: 52px;
+        margin-left: 0;
+        margin-right: auto;
     }
 
     .hero-title {
-        font-size: 40px;
+        margin-left: 0;
+        margin-right: auto;
     }
 
     .hero-subtitle {
-        font-size: 25px;
-        letter-spacing: 5px;
+        justify-content: flex-start;
+        margin-left: 0;
+        margin-right: auto;
     }
 
     .hero-subtitle::after {
@@ -55,28 +58,14 @@
     }
 
     .hero-description {
-        font-size: 16px;
-    }
-
-    .hero-buttons {
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 24px;
-    }
-
-    .hero-content {
+        margin-left: 0;
+        margin-right: auto;
         text-align: left;
     }
 
-    .hero-title {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .hero-subtitle {
+    .hero-buttons {
         justify-content: flex-start;
     }
-
 }
 
 @media (min-width: 900px) {
@@ -103,5 +92,22 @@
 
     .menu-toggle {
         display: none;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+
+    .hero-description {
+        font-size: 16px;
     }
 }
