@@ -1,0 +1,109 @@
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 520px;
+    position: relative;
+    background: 
+    linear-gradient(
+        90deg,
+        rgba(5, 24, 46, 0.98) 0%,
+        rgba(5, 24, 46, 0.92) 30%,
+        rgba(5, 24, 46, 0.45) 65%,
+        rgba(5, 24, 46, 0.25) 100%
+    ),
+    url("../assets/images/default_background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+    padding-top: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 33px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 23px;
+    margin: 0 auto 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    max-width: 600px;
+}
+
+.hero-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--light-gold);
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.hero-description {
+    max-width: 410px;
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--gold);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--dark-gold);
+}
+
+.btn-outline {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.btn-outline:hover {
+    background: var(--white);
+    color: var(--navy);
+}
